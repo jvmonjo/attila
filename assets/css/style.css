@@ -265,6 +265,9 @@ td, th {
 .icon-linkedin:before {
   content: '\f0e1'; }
 
+.icon-mastodon:before {
+  content: '\f2f6'; }
+
 /* '' */
 /* '' */
 /* latin-ext */
@@ -1906,6 +1909,9 @@ textarea {
       float: none;
       margin-bottom: 2rem; } }
 
+.post-share div, .post-share a {
+  margin-right: 1rem; }
+
 .post-share a {
   display: block;
   width: 3rem;
@@ -1917,7 +1923,7 @@ textarea {
   text-align: center;
   text-decoration: none;
   color: white;
-  border-radius: 2em;
+  border-radius: 50%;
   transition: all ease 0.2s; }
   @media only screen and (max-width: 640px) {
     .post-share a {
@@ -1943,6 +1949,9 @@ textarea {
 
 .post-share .linkedin {
   background-color: #0E76A8; }
+
+.post-share .mastodon {
+  background-color: #b48400; }
 
 .post-share .email {
   background-color: #2997EE; }
