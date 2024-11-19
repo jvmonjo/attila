@@ -2443,6 +2443,7 @@ textarea {
 .nav-instagram a,
 .nav-linkedin a,
 .nav-mastodon a,
+.nav-bluesky a,
 .nav-pinterest a,
 .nav-threads a,
 .nav-tiktok a,
@@ -2461,6 +2462,7 @@ textarea {
 .nav-instagram a::before,
 .nav-linkedin a::before,
 .nav-mastodon a::before,
+.nav-bluesky a::before,
 .nav-pinterest a::before,
 .nav-threads a::before,
 .nav-tiktok a::before,
@@ -2486,6 +2488,7 @@ textarea {
 .nav-instagram a::before {content: "\f16d"}
 .nav-linkedin a::before {content: "\f08c"}
 .nav-mastodon a::before {content: "\f4f6"}
+.nav-bluesky a::before {content: "\e671"}
 .nav-pinterest a::before {content: "\f0d2"}
 .nav-threads a::before {content: "\e618"}
 .nav-tiktok a::before {content: "\e07b"}
