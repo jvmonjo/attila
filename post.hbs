@@ -243,12 +243,12 @@
 			document.getElementById('bluesky-share').onclick = function(e) {
 				const btn = e.target;
 				let href = document.URL;
-				let titleAndTags = document.title;
+				let title = document.title;
 				if ('data-title' in btn.attributes && 'data-href' in btn.attributes) {
 					href = btn.attributes['data-href'].value;
 					title = btn.attributes['data-title'].value;
 				}
-				window.open('https://bsky.app/intent/compose?text=' + encodeURIComponent(titleAndTags) + ' ' + encodeURIComponent(href), "_blank");
+				return window.open('https://bsky.app/intent/compose?text=' + encodeURIComponent(title) + ' ' + encodeURIComponent(href), "_blank");
 			}
 		};
 
