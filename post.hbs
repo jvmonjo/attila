@@ -64,10 +64,10 @@
 						<a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}{{#if tags}}&hashtags={{tags separator="," autolink="false"}}{{/if}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"></a>
 					</div>
 					<div class="nav-bluesky">
-						<a title="Bluesky" id="bluesky-share" aria-label="Bluesky" class="bluesky" style="cursor: pointer;" data-title="{{title}} {{#if tags}}#{{tags separator=" #" autolink="false"}}{{/if}}" data-href="{{url absolute="true"}}"></a>
+						<a title="Bluesky" id="bluesky-share" class="bluesky" style="cursor: pointer;" data-title="{{title}} {{#if tags}}#{{tags separator=" #" autolink="false"}}{{/if}}" data-href="{{url absolute="true"}}"></a>
 					</div>
 					<div class="nav-mastodon">
-						<a title="Mastodon" id="mastodon-share" aria-label="Mastodon" class="mastodon" style="cursor: pointer;" data-title="{{title}} {{#if tags}}#{{tags separator=" #" autolink="false"}}{{/if}}" data-href="{{url absolute="true"}}"></a>
+						<a title="Mastodon" id="mastodon-share" class="mastodon" style="cursor: pointer;" data-title="{{title}} {{#if tags}}#{{tags separator=" #" autolink="false"}}{{/if}}" data-href="{{url absolute="true"}}"></a>
 					</div>
 					<div class="nav-facebook">
 						<a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}{{#if tags}}&hashtag={{tags separator="," autolink="false" limit=1}}{{/if}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
@@ -236,10 +236,7 @@
 					alert("Please enter your instance without https:// or other paths!");
 				}
 			}
-		};
-
 		  // share to Bluesky
-		window.onload = function() {
 			document.getElementById('bluesky-share').onclick = function(e) {
 				const btn = e.target;
 				let href = document.URL;
